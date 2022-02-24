@@ -1,0 +1,136 @@
+*{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/*
+flex properties
+*/
+ .fotter-nav, .portfolio-items, #main-nav { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+ #main-nav { 
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    padding-bottom: 3PX;
+
+
+}
+
+
+.fotter-nav { 
+   flex-direction: row;
+   padding-top: 7px;
+}
+.student-name-fot{ 
+  margin-left: 2vw;
+
+}
+.nav-bot{ 
+    margin-left: 41vw ;
+}
+
+
+
+
+
+
+/*
+regular css
+*/
+ul { 
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+nav {
+     background-color: burlywood;
+     margin: 0;
+}
+.item  { 
+    margin: 2vh auto 5vh;
+}
+
+#item-6{ 
+    margin-bottom: 0;
+}
+h3{ 
+    margin-top: 5vh;
+}
+p{ 
+    max-width: 75vh;
+    padding: 2vh 12vw 4vh;
+   
+}
+
+.student-name { 
+    text-shadow: 5px ;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#student-name-fot{ 
+    font-weight: bold;
+}
+.home, .portfolio, .contact-nav{ 
+    background-color: rgb(192, 146, 61);
+    border: 1px solid rgb(192, 146, 61);
+    
+}
+.nav-link, .nav-bot { 
+   text-decoration: none;
+   color: black;
+
+}
+.contact-info { 
+    padding-bottom: 2vh ;
+    width: 70vw;
+
+}
+
+#portfolio{ 
+    margin-bottom: 40px;
+    font-size: larger;
+}
+.contact { 
+    background-color: #ebebeb;
+}
+#contact-h3{ 
+    margin-top: 0;
+    padding-top: 5px;
+}
+.item-1{ 
+    padding-top: 5px;
+
+}
+footer{ 
+    background-color: rgb(192, 146, 61);
+}
+/*
+    images 
+*/
+img { 
+    max-width: 80vw;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#profile-pic { 
+    margin-top: 5vh;
+    margin-bottom: 5vh ;
+    
+} 
+
+/*
+media tags
+*/
+@media screen and (min-width: 768px){ 
+
+}
