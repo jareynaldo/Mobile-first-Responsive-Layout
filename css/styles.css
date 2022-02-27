@@ -28,15 +28,23 @@ flex properties
 .fotter-nav { 
    flex-direction: row;
    padding-top: 7px;
-}
+   padding-bottom: 5px;
+
+} 
 .student-name-fot{ 
-  margin-left: 2vw;
+  width: 48%;
+  margin-left: 4px;
+  text-align: left;
 
 }
-.nav-bot{ 
-    margin-left: 41vw ;
+.back-home{ 
+   width: 48%;
+   text-align: right;
 }
 
+.home-name-fot, .portfolio-name-fot, .contact-nav-name-fot{ 
+    display: none;
+}
 
 
 
@@ -132,5 +140,94 @@ img {
 media tags
 */
 @media screen and (min-width: 768px){ 
+
+   img{ 
+       max-width: 44vw ;
+   }
+   #profile-pic{ 
+       float: right;
+       margin-right: 4vw;
+       margin-top: -1vh;
+       
+   }
+   .intro-p{ 
+       margin-top: 8vh;
+       max-width: 38vw;
+       text-align: left;
+       font-size: 1.2rem;
+   }
+   #main-nav{
+        flex-direction: row;
+   }
+   .student-name{ 
+    width: 100%;
+   } 
+   .home, .portfolio, .contact-nav{ 
+       width: 33%;
+   }
+
+   .portfolio-items{ 
+       flex-direction: row;
+   }
+   .item { 
+       max-width: 48%;
+       flex-flow: column wrap;
+   }
+   p{ 
+       padding-right: 5vw;
+       padding-left: 5vw;
+   }
+
+   #contact-h3{ 
+       font-size: 2em;
+   }
+   #contact-p{  
+        min-width: 49%;
+        max-width: 50%;
+       text-align: center;
+       padding-right: 25%;
+       padding-left: 25%;
+   }
+   .home-name-fot, .portfolio-name-fot, .contact-nav-name-fot{ 
+    display: inline;
+    width: 15%;
+    }
+   .back-home{ 
+       display: none;
+   }
+}
+@media screen and (min-width: 1024px){
+
+    .item { 
+        max-width: 30%;
+        flex-flow: column wrap;
+    }
+    .item-img{ 
+        max-width: 100%;
+    }
+    p{ 
+        font-size: 1.2em;  
+        min-width: 33%; 
+ }
+    h3 h2{ 
+        font-size: x-large;
+    }
+    .student-name{ 
+        width: 15vw;
+    }
+    .home, .portfolio, .contact-nav{ 
+        width: 12%;
+    }
+    .rightinfo{ 
+        padding-bottom:.1vh ;
+        padding-top:.1vh ;
+    }
+    .wrong{ 
+        padding-bottom: 4vh;
+    }
+    .contact-info{ 
+        text-align: center;
+        width: 100%;
+    }
 
 }
