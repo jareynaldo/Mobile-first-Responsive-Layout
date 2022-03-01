@@ -1,5 +1,4 @@
 *{
-    font-family: 'Lato', sans-serif;
     text-align: center;
     margin: 0;
 }
@@ -33,7 +32,8 @@ flex properties
 } 
 .student-name-fot{ 
   width: 48%;
-  margin-left: 4px;
+  font-size: xx-large;
+  margin-left: 2em;
   text-align: left;
 
 }
@@ -79,7 +79,7 @@ p{
 }
 
 .student-name { 
-    text-shadow: 5px ;
+    text-shadow: 0 0 1px;
     font-weight: bold;
     padding-bottom: 5px;
     margin-right: auto;
@@ -108,7 +108,7 @@ p{
     margin-bottom: 40px;
     font-size: larger;
 }
-.contact { 
+#contact-element { 
     background-color: #ebebeb;
 }
 #contact-h3{ 
@@ -145,11 +145,14 @@ media tags
    img{ 
        max-width: 44vw ;
    }
+   #intro-element{ 
+    display: flex;
+   }
+   
    #profile-pic{ 
-       float: right;
-       margin-right: 4vw;
-       margin-top: -1vh;
-       
+    display: block;
+    order: 2;
+    flex: 2;
    }
    .intro-p{ 
        margin-top: 8vh;
@@ -157,6 +160,7 @@ media tags
        text-align: left;
        font-size: 1.2rem;
    }
+
    #main-nav{
         flex-direction: row;
    }
@@ -214,6 +218,7 @@ media tags
         font-size: x-large;
     }
     .student-name{ 
+        font-size: x-large;
         width: 15vw;
     }
     .home, .portfolio, .contact-nav{ 
@@ -232,3 +237,11 @@ media tags
     }
 
 }
+
+@font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/varelaround/v17/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
